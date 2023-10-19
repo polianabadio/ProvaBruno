@@ -26,4 +26,8 @@ public class TipoInvestimento {
 
     @Column(name = "DATA_FIM")
     LocalDateTime dataFim;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Investimento investimento;
+
 }

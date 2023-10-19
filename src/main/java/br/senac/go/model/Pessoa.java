@@ -23,4 +23,10 @@ public class Pessoa {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Carteira carteira;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Conta conta;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Investimento investimento;
 }
